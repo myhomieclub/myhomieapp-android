@@ -1,0 +1,35 @@
+@import './utils.less';
+.footer_guide{
+    .position(fixed, auto, auto, 0, auto);
+    .fixed;
+    z-index: 2;
+	background-color: #fff;
+	border-top: 1px solid #eee;	
+
+	.guide_item {
+	    width: 20%;
+	    height: 48px;
+	    background-color: #fff;
+	    color: #999;
+	    display: block;
+	    float: left;
+
+	    span {
+	        width: 100%;
+	        display:inline-block;
+	        text-align: center;
+	        font-size: 12px;
+	    }
+
+	    .item_icon {
+	        height: 32px;
+	        line-height: 32px;
+	        .iconfont {
+	            font-size: 24px;
+	        }
+	    }
+    }
+    .on {
+      color: @orange;
+    }
+}
