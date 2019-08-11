@@ -1,156 +1,176 @@
 @import './utils.less';
-.discover{
-	.fixed;
-	height: 100%;
-/*	.category {
-	    .position(fixed,48px);
-	    .fixed;
-	    z-index: 2;
-	    height: 44px;
-	    line-height: 44px;
-	    background-color: #FFF;
-	    color: #666;
-	    font-size: 14px;
-	    overflow-x: scroll;
-	    overflow-y: hidden;
-	    border-bottom: 1px solid #eee;
 
-	    .category_list {
-            width: 500%;
-            padding-right:28px;
-	        .category_item {
-	        	height: 41px;
-	            display: block;
-	            padding: 0 12px;
-	            float: left;
-	        }
-	        .active {
-	            color: @orange;
-	            font-weight: 600;
-	            border-bottom: 2px solid @orange;
-	        }
-	    }
+.discover {
+    .fixed;
+    height: 100%;
+    /*	.category {
+            .position(fixed,48px);
+            .fixed;
+            z-index: 2;
+            height: 44px;
+            line-height: 44px;
+            background-color: #FFF;
+            color: #666;
+            font-size: 14px;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            border-bottom: 1px solid #eee;
 
-	    .icon-list {
-	        .position(fixed,auto,0,auto,auto);
-	        float: right;
-	        font-size: 18px;
-	        padding-right: 10px;
-	        background-color: #FFF;
-	        @media screen and (min-width: 680px) {
-                .position(absolute,auto,0,auto,auto);
+            .category_list {
+                width: 500%;
+                padding-right:28px;
+                .category_item {
+                    height: 41px;
+                    display: block;
+                    padding: 0 12px;
+                    float: left;
+                }
+                .active {
+                    color: @orange;
+                    font-weight: 600;
+                    border-bottom: 2px solid @orange;
+                }
             }
-	    }
-	}*/
-	.container {
-		.fixed;
-		.discover_container {
-			.position(fixed,48px,auto,48px,auto);
-			.fixed;
-			.discover_list {
-	    		width: 100%;
-	    		float: left;
-	    		.discover_item {
-	    			width: 100%;
-	    			height: auto;
-	    			background-color: #FFF;
-	    			border-bottom: 1px solid #eee;
-	    			padding: 0 15px;
-	    			float: left;
-	    			.author {
-	    				width: 100%;
-	    				height: 40px;
-	    				margin: 10px 0 0 0;
-	    				.headimg {
-	    					width: 40px;
-	    					height: 40px;
-	    					border-radius: 40px;
-	    					background-color: #eee;
-	    					overflow: hidden;
-	    					float: left;
-	    					img {
-	    						width: 100%;
-	    						height: 100%;
-	    					}
-	    				}
-	    				.nickname {
-	    					width: 100%;
-	    					height: 25px;
-	    					line-height: 25px;
-	    					font-size: 14px;
-	    					color: #333;
-	    					padding-left: 50px;
-	    				}
-	    				.time {
-	    					width: 100%;
-	    					height: 15px;
-	    					line-height: 15px;
-	    					font-size: 12px;
-	    					color: #999;
-	    					padding-left: 50px;
-	    				}
-	    			}
-	    			.content {
-	    				.multiple(3);
-	    				width: 100%;
-	    				height: auto;
-	    				padding: 8px 0;
-	    				font-size: 14px;
-	    				color: #666;
-	    			}
-	    			.item_img {
-	    				width: 100%;
-	    				height: auto;
-	    				float: left;
-	    				.one_img {
-	    					width: 40%;
-	    					height: auto;
-	    					overflow: hidden;
-	    					float: left;
-	    				}
-	    				.two_four {
-	    					width: 38%;
-						    padding-bottom:38%;
-						    height: 0;
-	    					margin-right: 1%;
-	    					margin-bottom: 1%;
-	    					overflow: hidden;
-	    					float: left;
-	    				}
-	    				.three_six_nine {
-	    					width: 32%;
-	    					padding-bottom:32%;
-	    					height: 0;
-		    				margin-right: 1%;
-		    				margin-bottom: 1%;
-		    				overflow: hidden;
-		    				float: left;
-	    				}
-	    				img {
-	    					width: 100%;
-	    				}
-	    			}
-	    			.note {
-	    				width: 100%;
-	    				height: 34px;
-	    				font-size: 12px;
-	    				line-height: 34px;
-	    				.browse {
-	    					width: 20%;
-	    					color: 999;
-	    				}
-	    				.like, .com, .share, .more {
-	    					width: auto;
-	    					padding-left: 10px;
-	    					float: right;
-	    				}
-	    			}
-	    		}
-	    	}
-			.mescroll-upwarp {
-				width: 100%;
-				float: left;
-			}
-		}
-	}
+
+            .icon-list {
+                .position(fixed,auto,0,auto,auto);
+                float: right;
+                font-size: 18px;
+                padding-right: 10px;
+                background-color: #FFF;
+                @media screen and (min-width: 680px) {
+                    .position(absolute,auto,0,auto,auto);
+                }
+            }
+        }*/
+
+    .container {
+        .fixed;
+
+        .discover_container {
+            .position(fixed, 48px, auto, 48px, auto);
+            .fixed;
+
+            .discover_list {
+                width: 100%;
+                float: left;
+
+                .discover_item {
+                    width: 100%;
+                    height: auto;
+                    background-color: #FFF;
+                    border-bottom: 1px solid #eee;
+                    padding: 0 15px;
+                    float: left;
+
+                    .author {
+                        width: 100%;
+                        height: 40px;
+                        margin: 10px 0 0 0;
+
+                        .headimg {
+                            width: 40px;
+                            height: 40px;
+                            border-radius: 40px;
+                            background-color: #eee;
+                            overflow: hidden;
+                            float: left;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .nickname {
+                            width: 100%;
+                            height: 25px;
+                            line-height: 25px;
+                            font-size: 14px;
+                            color: #333;
+                            padding-left: 50px;
+                        }
+
+                        .time {
+                            width: 100%;
+                            height: 15px;
+                            line-height: 15px;
+                            font-size: 12px;
+                            color: #999;
+                            padding-left: 50px;
+                        }
+                    }
+
+                    .content {
+                        .multiple(3);
+                        width: 100%;
+                        height: auto;
+                        padding: 8px 0;
+                        font-size: 14px;
+                        color: #666;
+                    }
+
+                    .item_img {
+                        width: 100%;
+                        height: auto;
+                        float: left;
+
+                        .one_img {
+                            width: 40%;
+                            height: auto;
+                            overflow: hidden;
+                            float: left;
+                        }
+
+                        .two_four {
+                            width: 38%;
+                            padding-bottom: 38%;
+                            height: 0;
+                            margin-right: 1%;
+                            margin-bottom: 1%;
+                            overflow: hidden;
+                            float: left;
+                        }
+
+                        .three_six_nine {
+                            width: 32%;
+                            padding-bottom: 32%;
+                            height: 0;
+                            margin-right: 1%;
+                            margin-bottom: 1%;
+                            overflow: hidden;
+                            float: left;
+                        }
+
+                        img {
+                            width: 100%;
+                        }
+                    }
+
+                    .note {
+                        width: 100%;
+                        height: 34px;
+                        font-size: 12px;
+                        line-height: 34px;
+
+                        .browse {
+                            width: 20%;
+                            color: #999;
+                        }
+
+                        .like, .com, .share, .more {
+                            width: auto;
+                            padding-left: 10px;
+                            float: right;
+                        }
+                    }
+                }
+            }
+
+            .mescroll-upwarp {
+                width: 100%;
+                float: left;
+            }
+        }
+    }
 }

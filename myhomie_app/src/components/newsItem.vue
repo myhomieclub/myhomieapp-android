@@ -1,15 +1,15 @@
 <template>
-	<div style="news_item">
-		<div class="item_title">shsdh djdh </div>
-		<div class="item_img"><img src=""></div>
-	</div>
+    <div>
+        <div class="item_title">shsdh djdh</div>
+        <div class="item_img"><img src=""></div>
+    </div>
 </template>
 <script>
-	export default {
-		name: 'newsItem',
-	}
+    export default {
+        name: 'newsItem',
+    }
 </script>
 
 <style lang="less">
-@import '../common/style/newsItem.less';
+    @import '../common/style/newsItem.less';
 </style>

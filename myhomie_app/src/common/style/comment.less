@@ -1,75 +1,89 @@
 @import './utils.less';
+
 .comment {
-	background-color: #fff;
+    background-color: #fff;
     margin-top: 10px;
+
     .comment_title {
-    	.font-s3;
+        .font-s3;
         padding: 10px 15px;
-    	border-bottom: 1px solid #eee;
-    	.sum {
-    		margin-left: 6px;
-    	}
+        border-bottom: 1px solid #eee;
+
+        .sum {
+            margin-left: 6px;
+        }
     }
+
     .blankComment {
-        width:100%; 
-        height: 120px; 
-        background-color: #fff; 
-        text-align: center; 
-        font-size: 14px; 
-        color: #666; 
+        width: 100%;
+        height: 120px;
+        background-color: #fff;
+        text-align: center;
+        font-size: 14px;
+        color: #666;
         padding-top: 20px;
         margin-bottom: 10px;
+
         img {
             width: 50px;
-            height: 50px; 
-            margin: 0 auto; 
+            height: 50px;
+            margin: 0 auto;
             display: block
         }
     }
+
     .comment_list, .reply_list {
-    	margin: 0 15px;
-    	padding: 12px 0;
+        margin: 0 15px;
+        padding: 12px 0;
         border-bottom: 1px solid #e3e3e3;
 
         .headimg {
-        	.position(absolute);
-        	width: 40px;
-        	height: 40px;
-        	border-radius: 20px;
-        	overflow: hidden;
-        	img {
-        		width: 100%;
+            .position(absolute);
+            width: 40px;
+            height: 40px;
+            border-radius: 20px;
+            overflow: hidden;
+
+            img {
+                width: 100%;
                 height: 100%;
-        	}
+            }
         }
+
         .headright {
-        	padding-left: 50px;
+            padding-left: 50px;
+
             .comment_detail {
                 .report {
                     .font-s2;
                     color: #999;
                     float: right;
                 }
+
                 .username {
                     .font-s2;
                     color: @blue;
                     width: 70%;
                 }
+
                 .comment_content {
                     .font-s3;
                     color: #333;
                     margin: 6px 0 2px 0;
                     word-break: break-word;
                 }
+
                 .comment_img {
                     width: 60%;
                     height: auto;
                     overflow: hidden;
                     margin: 2px 0;
+
                     img {
                         width: 100%;
                     }
                 }
+
                 .comment_inform {
                     height: 20px;
                     line-height: 20px;
@@ -79,45 +93,53 @@
                         .font-s1;
                         color: #999;
                         width: 70%;
-                    }  
+                    }
+
                     .like {
                         .font-s2;
                         color: #666;
                         float: right;
+
                         .iconfont {
                             margin: 0 4px;
                         }
                     }
+
                     .like2 {
                         color: @orange;
-                    }  
+                    }
                 }
-                
+
             }
 
-        	.reply_detail {
-        		color: #666;
+            .reply_detail {
+                color: #666;
                 .font-s2;
-        		background-color: #eee;
-        		padding: 6px;
-        		.pb {
-        			padding-bottom: 6px;
+                background-color: #eee;
+                padding: 6px;
+
+                .pb {
+                    padding-bottom: 6px;
                     word-break: break-word;
+
                     .user {
                         color: @blue;
+
                         .icon-playfill {
                             color: #aaa;
                         }
                     }
-        		}
+                }
+
                 .see_more {
                     .font-s2;
                     color: #0000aa;
                 }
-        	}
+            }
         }
     }
 }
+
 .reply {
     margin-top: 0;
 }

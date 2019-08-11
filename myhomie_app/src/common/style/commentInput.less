@@ -1,13 +1,15 @@
 @import './utils.less';
+
 .bottom_content {
-    .position(fixed,auto,auto,0,auto);
+    .position(fixed, auto, auto, 0, auto);
     z-index: 2;
     width: 100%;
     max-width: 680px;
     height: 48px;
     background-color: #fff;
     border-top: 1px solid #eee;
-    .com2{
+
+    .com2 {
         width: 40%;
         height: 32px;
         line-height: 32px;
@@ -21,6 +23,7 @@
         padding: 0 4px;
         float: left;
     }
+
     .com_reply {
         width: 91%;
         height: 32px;
@@ -35,6 +38,7 @@
         padding: 0 4px;
         float: left;
     }
+
     .right_item {
         width: 10%;
         height: 48px;
@@ -42,11 +46,13 @@
         color: #666;
         margin-left: 3%;
         float: left;
+
         .iconfont {
             font-size: 24px;
         }
+
         .red_num {
-            .position(absolute,5px);
+            .position(absolute, 5px);
             margin-left: -10px;
             width: auto;
             height: 12px;
@@ -61,11 +67,13 @@
     }
 
 }
+
 .comment_input {
     .fixed;
     height: auto;
     background-color: #fff;
     border-top: 1px solid #eee;
+
     .com {
         width: 73%;
         height: auto;
@@ -76,29 +84,35 @@
         font-size: 14px;
         padding: 6px;
         float: left;
+
         .wid {
             padding: 0;
             width: 100%;
             float: left;
         }
+
         .wid::after {
             border-bottom: none;
         }
+
         .if_image {
             width: calc(100% - 66px);
         }
-        .image{
+
+        .image {
             .position(relative);
             width: 60px;
             height: 60px;
             background-color: #aaa;
             overflow: hidden;
             float: right;
+
             img {
                 width: 100%;
             }
+
             .delete_img {
-                .position(absolute,0,0);
+                .position(absolute, 0, 0);
                 width: 18px;
                 height: 18px;
                 line-height: 18px;
@@ -107,8 +121,9 @@
             }
         }
     }
+
     .com_send {
-        .position(absolute,auto,0,37px,auto);
+        .position(absolute, auto, 0, 37px, auto);
         width: 15%;
         height: 30px;
         line-height: 30px;
@@ -119,6 +134,7 @@
         color: #fff;
         border-radius: 4px;
     }
+
     .insert_img {
         width: 100%;
         height: 24px;
@@ -126,12 +142,14 @@
         padding: 0 4%;
         margin-bottom: 6px;
         float: left;
+
         input {
-            width:24px;
+            width: 24px;
             opacity: 0;
         }
+
         .icon-pic {
-            .position(absolute,auto,auto,auto,4%);
+            .position(absolute, auto, auto, auto, 4%);
             z-index: -1;
             color: #666;
             font-size: 24px;

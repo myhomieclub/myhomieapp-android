@@ -21,7 +21,6 @@
         </div>
       </div>
     </div>
-    </van-popup> -->
     <!--swiper内容-->
     <div class="container">
       <!--轮播-->
@@ -561,6 +560,6 @@
 
 <style lang="less">
 @import '../../common/style/news.less';
-@import '../../../node_modules/mescroll.js/mescroll.min.css';
+/*@import '../../../node_modules/mescroll.js/mescroll.min.css';*/
 @import '../../common/style/newsItem.less';
 </style>

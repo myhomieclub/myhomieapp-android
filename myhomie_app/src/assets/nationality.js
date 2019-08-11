@@ -1,4 +1,4 @@
-var nationality=[
+var nationality = [
     "Angola-安哥拉",
     "Afghanistan-阿富汗",
     "Albania-阿尔巴尼亚",
@@ -193,5 +193,5 @@ var nationality=[
     "Zimbabwe-津巴布韦",
     "Zaire-扎伊尔",
     "Zambia-赞比亚"
-  ];
+];
 export default nationality;

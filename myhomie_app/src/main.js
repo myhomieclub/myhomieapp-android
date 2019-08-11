@@ -15,7 +15,22 @@ import api from './api/api.js';
 import './common/js/api.js';
 import i18n from './lang';
 import md5 from 'js-md5';
-import { Cell, CellGroup ,Icon, Button, Toast, Popup, Dialog, Actionsheet, Locale,SwitchCell,RadioGroup, Radio, Uploader} from 'vant'
+import {
+    Cell,
+    CellGroup,
+    Icon,
+    Button,
+    Toast,
+    Popup,
+    Dialog,
+    Actionsheet,
+    Locale,
+    SwitchCell,
+    RadioGroup,
+    Radio,
+    Uploader
+} from 'vant'
+
 Vue.use(Cell).use(CellGroup).use(Icon).use(Button).use(Toast).use(Popup).use(Dialog).use(Actionsheet).use(SwitchCell).use(RadioGroup).use(Radio).use(Uploader)
 // Vue.use(toastRegistry);//////自定义toast弹窗组件
 // import Mock from './mock'; // 引入mock模块
@@ -32,25 +47,25 @@ Vue.prototype.url_config = URL;
 Vue.prototype.$api = api;
 
 /* eslint-disable no-new */
-if(ifApp()) { //判断当前设备是app还是网页，是APP则调用apiready确保app内调用apicloud接口正常运行
-	// window.apiready = function () {
-		new Vue({
-		  el: '#app',
-		  router,
-		  store,
-		  i18n,
-		  components: { App },
-		  template: '<App/>'
-		})	
-	// }
-}else {
-	new Vue({
-	  el: '#app',
-	  router,
-	  store,
-	  i18n,
-	  components: { App },
-	  template: '<App/>'
-	})
+if (ifApp()) { //判断当前设备是app还是网页，是APP则调用apiready确保app内调用apicloud接口正常运行
+    // window.apiready = function () {
+    new Vue({
+        el: '#app',
+        router,
+        store,
+        i18n,
+        components: {App},
+        template: '<App/>'
+    })
+    // }
+} else {
+    new Vue({
+        el: '#app',
+        router,
+        store,
+        i18n,
+        components: {App},
+        template: '<App/>'
+    })
 }
 

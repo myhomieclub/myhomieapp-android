@@ -22,7 +22,7 @@
 			        			<div class="comment_pic" @click="goto(comment.postid, comment.postType)">
 			        				<img :src="comment.pic">
 			        			</div>
-			        			<div class="bottom" @click="goto(comment.postid, comment.postType)" v-if="comment.groupid != null">Reply Comment: {{comment.commentContent}}</div>
+								<div class="bottom" @click="goto(comment.postid, comment.postType)" v-if="comment.groupid != null">Reply Comment: {{comment.commentContent}}</div>
 			        			<div class="my_post" @click="goto(comment.postid, comment.postType)" v-if="comment.groupid == null">Comment Post: {{comment.postTitle}}</div>
 		        			</div>
 		        		</div>

@@ -1,43 +1,43 @@
 import Mock from 'mockjs';
+
 const count = 34;
 ///////postList 帖子数据
 let postList = [];
-for(let i = 0; i<count; i++) {
-	postList.push(Mock.mock({
-		postId: Mock.Random.id(),
-		userId: Mock.Random.id(),
-		postType: Mock.Random.integer(0,2),/////0,1,2代表的是新闻 信息 发现
-		title: Mock.Random.title(),
-		content: Mock.Random.paragraph(),
-		createdTime: Mock.Random.time(),
-		category: Mock.Random.word(),/////分别属于哪个分类里面
-		seen: Mock.Random.integer(1,100),
-		location: Mock.Random.region(),
-		video: Mock.Random.url(),
-		tag: Mock.Random.range(),
-		valid: Mock.Random.integer(0,1),
-	}))
+for (let i = 0; i < count; i++) {
+    postList.push(Mock.mock({
+        postId: Mock.Random.id(),
+        userId: Mock.Random.id(),
+        postType: Mock.Random.integer(0, 2),/////0,1,2代表的是新闻 信息 发现
+        title: Mock.Random.title(),
+        content: Mock.Random.paragraph(),
+        createdTime: Mock.Random.time(),
+        category: Mock.Random.word(),/////分别属于哪个分类里面
+        seen: Mock.Random.integer(1, 100),
+        location: Mock.Random.region(),
+        video: Mock.Random.url(),
+        tag: Mock.Random.range(),
+        valid: Mock.Random.integer(0, 1),
+    }))
 }
 ////////评论数据
 let commentList = [];
-for(let i=0;i<count;i++) {
-	commentList.push(Mock.mock({
-		commentId: Mock.Random.id(),
-		userId: Mock.Random.id(),
-		postId: Mock.Random.id(),
-		createdTime: Mock.Random.time(),
-		groupId: Mock.Random.id(),
-		mentionId: Mock.Random.id(),
-		content: Mock.Random.sentence(),
-		pic: Mock.Random.url(),
-		likes: Mock.Random.integer(0,100),
-		valid: Mock.Random.integer(0,1),
-	}))
+for (let i = 0; i < count; i++) {
+    commentList.push(Mock.mock({
+        commentId: Mock.Random.id(),
+        userId: Mock.Random.id(),
+        postId: Mock.Random.id(),
+        createdTime: Mock.Random.time(),
+        groupId: Mock.Random.id(),
+        mentionId: Mock.Random.id(),
+        content: Mock.Random.sentence(),
+        pic: Mock.Random.url(),
+        likes: Mock.Random.integer(0, 100),
+        valid: Mock.Random.integer(0, 1),
+    }))
 }
 export {
-	postList,commentList
+    postList, commentList
 }
-
 
 
 /*
